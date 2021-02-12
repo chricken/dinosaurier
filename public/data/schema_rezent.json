@@ -1,0 +1,23 @@
+[
+    {
+        "url": "schmetterling.png",
+        "name": "schmetterling",
+        "laenge": 0.05
+    },{
+        "url": "kaninchen.png",
+        "name": "kaninchen",
+        "laenge": 0.3
+    },{
+        "url": "mensch.png",
+        "name": "mensch",
+        "laenge": 1.8
+    },{
+        "url": "elefant.png",
+        "name": "elefant",
+        "laenge": 7
+    },{
+        "url": "pottwal.png",
+        "name": "pottwal",
+        "laenge": 20
+    }
+]

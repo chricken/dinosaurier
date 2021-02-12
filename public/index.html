@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAURS!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="fe.css" rel="stylesheet" />
+
+    <script src="fe.js" type="module" defer></script>
+</head>
+
+<body>
+    <canvas id="cAges"></canvas>
+    <canvas id="c"></canvas>
+
+    <div id="maginifier">
+        <img src="bilder/icon_magnifier.png" />
+    </div>
+
+    <div id="gear">
+        <a href="impressum_de.html" target="_blank">Impressum</a>
+        <img src="bilder/icon_settings.png" />
+    </div>
+
+    <div id="details" class="info" draggable="true">
+        <div class="grabber">Info</div>
+        <div class="closer">X</div>
+
+        <div class="content">
+        </div>
+    </div>
+
+    <div id="suche" class="info">
+        <div class="grabber">Suche</div>
+        <div class="closer">X</div>
+
+        <div class="content">
+            <div class="eingabe">
+                <input type="text" id="inputSuche" placeholder="Eingabe" />
+                <div class="zaehler">0/0</div>
+            </div>
+
+            <div class="liste"></div>
+        </div>
+    </div>
+
+    <div id="settings" class="info">
+        <div class="grabber">Settings</div>
+        <div class="closer">X</div>
+
+        <div class="content">
+            <div class="sprache">
+                <span>
+                    Language
+                </span>
+                <select>
+                </select>
+            </legend>
+        </div>
+    </div>
+
+    <div id="preloader">
+        <img src="bilder/bg_raster1.png" id="imgRaster" />
+    </div>
+</body>
+
+</html>

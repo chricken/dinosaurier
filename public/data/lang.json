@@ -1,0 +1,314 @@
+{
+    "karbon": {
+        "de": "Karbon",
+        "en": "Carboniferous"
+    },
+    "perm": {
+        "de": "Perm",
+        "en": "Permian"
+    },
+    "trias": {
+        "de": "Trias",
+        "en": "Triassic"
+    },
+    "jura": {
+        "de": "Jura",
+        "en": "Jurassic"
+    },
+    "kreide": {
+        "de": "Kreide",
+        "en": "Cretaceous"
+    },
+    "ceno": {
+        "de": "Känozoikum",
+        "en": "Cenozoic"
+    },
+    "de": {
+        "de": "Deutsch",
+        "en": "German"
+    },
+    "en": {
+        "de": "Englisch",
+        "en": "English"
+    },
+    "lebensraum": {
+        "de": "Lebensraum",
+        "en": "Habitat"
+    },
+    "nahrung": {
+        "de": "Nahrung",
+        "en": "Diet"
+    },
+    "entdeckt": {
+        "de": "Jahr der Entdeckung",
+        "en": "Year of Discovery"
+    },
+    "gewicht": {
+        "de": "Gewicht",
+        "en": "Weight"
+    },
+    "kg":{
+        "de": "kg",
+        "en": "kg"
+    },
+    "laenge": {
+        "de": "Länge",
+        "en": "Length"
+    },
+    "meter":{
+        "de": "Meter",
+        "en": "Meters"
+    },
+    "spannweite": {
+        "de": "Spannweite",
+        "en": "Wingspan"
+    },
+    "mioJhrVonBis": {
+        "de": "Mio Jahre von bis",
+        "en": "Mio Years from to"
+    },
+    "mioJhrVon": {
+        "de": "Älteste Funde",
+        "en": "Oldest finds"
+    },
+    "mioJhrBis": {
+        "de": "Jüngste Funde",
+        "en": "Youngest finds"
+    },
+    "abstammung":{
+        "de": "Abstammung",
+        "en": "Ancestry"
+    },
+    "imageLebend": {
+        "de": "Lebendbild",
+        "en": "Image of Living"
+    },
+    "imageSkelett": {
+        "de": "Skelettbild",
+        "en": "Image of skeleton"
+    },
+    "imageSchema": {
+        "de": "Schema",
+        "en": "Schema"
+    },
+    "fundort": {
+        "de": "Fundort",
+        "en": "Location"
+    },
+    "land": {
+        "de": "Land",
+        "en": "Ground"
+    },
+    "wasser": {
+        "de": "Wasser",
+        "en": "Water"
+    },
+    "luft": {
+        "de": "Luft",
+        "en": "Air"
+    },
+    "hoehlen": {
+        "de": "Höhlen",
+        "en": "Subterrain"
+    },
+    "baeume": {
+        "de": "Bäume",
+        "en": "Trees"
+    },
+    "pflanzen": {
+        "de": "Pflanzen",
+        "en": "Plants"
+    },
+    "fleisch": {
+        "de": "Fleisch",
+        "en": "Meet"
+    },
+    "fisch": {
+        "de": "Fisch",
+        "en": "Fish"
+    },
+    "insekten": {
+        "de": "Insekten",
+        "en": "Insects"
+    },
+    "muscheln":{
+        "de": "Schalentiere",
+        "en": "Crustacean"
+    },
+    "marineinvertibres":{
+        "de": "Meeres Weichtiere",
+        "en": "Squids 'n stuff"
+    },
+    "kleid": {
+        "de": "Kleid",
+        "en": "Cover"
+    },
+    "haare": {
+        "de": "Haare",
+        "en": "Hair"
+    },
+    "daunen": {
+        "de": "Daunen",
+        "en": "down"
+    },
+    "federn": {
+        "de": "Federn",
+        "en": "Feathers"
+    },
+    "protofedern": {
+        "de": "Protofedern",
+        "en": "Protofeathers"
+    },
+    "schmuckfedern": {
+        "de": "Schmuckfedern",
+        "en": "Displayfeathers"
+    },
+    "color": {
+        "de": "Farbe",
+        "en": "Color"
+    },
+    "segel": {
+        "de": "Rückensegel",
+        "en": "Backsail"
+    },
+    "stacheln": {
+        "de": "Stacheln",
+        "en": "Stings"
+    },
+    "hammer": {
+        "de":"Hammer",
+        "en":"Hammer"
+    },
+    "platten": {
+        "de": "Knochenplatten",
+        "en": "Boneplates"
+    },
+    "hoerner": {
+        "de": "Hörner",
+        "en": "Horns"
+    },
+    "kamm": {
+        "de": "Kamm",
+        "en": "Crest"
+    },
+    "hahnenkamm": {
+        "de": "Hahnenkamm",
+        "en": "Head crest"
+    },
+    "kopfverlängerung": {
+        "de": "Kopfverlängerung",
+        "en": "Elongated Head"
+    },
+    "nackenschild": {
+        "de": "Nackenschild",
+        "en": "Neck Shield"
+    },
+    "kuppel":{
+        "de": "Kuppel",
+        "en": "Dome"
+    },
+    "schmuck": {
+        "de": "Extras",
+        "en": "Extras"
+    },
+    "typ":{
+        "de": "Typ",
+        "en": "Type"
+    },
+    "ankylosaurus":{
+        "de": "Ankylosaurus",
+        "en": "Ankylosaurus"
+    },
+    "ceratops":{
+        "de": "Ceratops",
+        "en": "Ceratops"
+    },
+    "elasmosaur":{
+        "de": "Elasmosaur",
+        "en": "Elasmosaur"
+    },
+    "hadrosaurus":{
+        "de": "Hadrosaurus",
+        "en": "Hadrosaurus"
+    },
+    "herrerasaurus":{
+        "de": "Herrerasaurus",
+        "en": "Herrerasaurus"
+    },
+    "ichthyosaurus":{
+        "de": "Ichthyosaurus",
+        "en": "Ichthyosaurus"
+    },
+    "mosasaurus":{
+        "de": "mosasaurus",
+        "en": "mosasaurus"
+    },
+    "pterosaur_ks":{
+        "de": "pterosaur_ks",
+        "en": "pterosaur_ks"
+    },
+    "pterosaur_ls":{
+        "de": "pterosaur_ls",
+        "en": "pterosaur_ls"
+    },
+    "sauropod":{
+        "de": "sauropod",
+        "en": "sauropod"
+    },
+    "stegosaur":{
+        "de": "stegosaur",
+        "en": "stegosaur"
+    },
+    "suchus":{
+        "de": "suchus",
+        "en": "suchus"
+    },
+    "theropod":{
+        "de": "theropod",
+        "en": "theropod"
+    },
+    "voegel":{
+        "de": "Vögel",
+        "en": "Birds"
+    },
+    "vogelraptor":{
+        "de": "vogelraptor",
+        "en": "vogelraptor"
+    },
+    "dimetrodon":{
+        "de": "dimetrodon",
+        "en": "dimetrodon"
+    },
+    "kannemeyer":{
+        "de": "kannemeyer",
+        "en": "kannemeyer"
+    },
+    "mioJhr":{
+        "de": "Mio Jahre",
+        "en": "Mio Years"
+    },
+    "spezies":{
+        "de": "Spezies",
+        "en": "species"
+    },
+    "suche":{
+        "de": "Suche",
+        "en": "Search"
+    },
+    "eingabe":{
+        "de": "Eingabe",
+        "en": "Input"
+    },
+    "details":{
+        "de": "Details",
+        "en": "Details"
+    },
+    "settings":{
+        "de": "Einstellungen",
+        "en": "Settings"
+    },
+    "sprache":{
+        "de": "Sprache",
+        "en": "Language"
+    }
+}

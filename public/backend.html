@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dinodata</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="backend.css" />
+
+    <script src="backend.js" defer type="module"></script>
+</head>
+
+<body>
+
+    <div id="baum">
+
+    </div>
+    <div id="suche">
+        <input type="text" placeholder="Filter" id="inputSuche" />
+    </div>
+    <div id="scrollTo">
+        <input type="text" placeholder="Scroll to" id="inputScrollTo" />
+        <span class="info">0/0</span>
+    </div>
+    <div id="details">
+        <div class="inner"></div>
+        <div class="bilder"></div>
+        <div class="links"></div>
+
+        <button id="btnSave">
+            Speichern
+        </button>
+
+
+        <div id="neuesAttribut">
+            <h3>
+                Neues Attribut
+            </h3>
+            <div id="attributHinzufuegen">
+
+            </div>
+            <!--
+            <select id="selNeuesAttribut">
+            </select>
+            <button id="btnNeuesAttribut">Anlegen</button>
+            -->
+        </div>
+
+        <div id="neuerKnoten">
+            <h3>
+                Neues Kind
+            </h3>
+            <input id="inputNeuerKnoten" placeholder="Name des neuen Eintrages" type="text" />
+            <button id="btnNeuerKnoten">Anlegen</button>
+        </div>
+    </div>
+
+    <div id="getUp">
+        ^
+    </div>
+
+</body>
+
+
+</html>

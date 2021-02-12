@@ -1,0 +1,537 @@
+/* Allgemein */
+
+:root {
+    --headerRot: #c32e04;
+    --grau: #888;
+    --grauDunkel: #555;
+    --grauHell: #ccc;
+    --rot: #f00;
+    --gelb: rgba(233, 194, 112, 0.699);
+    --nurEinBisschenDunkler: hsla(0, 0%, 0%, .01);
+    --borderGrau: 1px solid var(--grau);
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    position: relative;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--grau);
+}
+
+h1 {
+    color: var(--headerRot);
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* Suche */
+
+/* Datenbaum */
+
+#baum {
+    position: relative;
+    margin-right: 300px;
+}
+
+.ebene {
+    position: relative;
+    background-color: var(--nurEinBisschenDunkler);
+    padding: 0;
+    margin: 0;
+}
+
+.ebene .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(bilder/bg_raster1.png);
+    opacity: .1;
+    background-size: 10px;
+}
+
+.ebene.aktiv {
+    background-color: var(--gelb);
+}
+
+.ebene.aktiv>.bezeichnung {
+    color: var(--rot);
+}
+
+.ebene .bezeichnung:hover, .btnMove:hover~.bezeichnung {
+    background-color: #fff;
+}
+
+.ebene {
+    margin-left: 0px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.ebene.ebeneBG {
+    margin-left: 20px;
+}
+
+.ebene.spezies {
+    color: #000;
+    font-size: 16px;
+}
+
+.ebene.spezies .verknuepfung {
+    position: absolute;
+    display: block;
+    left: -20px;
+    width: 20px;
+    top: -1px;
+    height: 35px;
+    /*background-color: #f00;*/
+    background-image: url(bilder/verbinder_middle.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+
+.ebene.spezies:last-of-type .verknuepfung {
+    background-image: url(bilder/verbinder_end.png);
+}
+
+.ebene0 {
+    margin-left: 0px;
+}
+
+.ebene .bezeichnung {
+    position: relative;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    background: #fff;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+.ebene.ebeneBG .bezeichnung {
+    height: auto;
+    overflow: hidden;
+    background: transparent;
+}
+
+.ebene .bezeichnung.mitBild {
+    padding-left: 60px;
+}
+
+.ebene .bezeichnung.hidden {
+    display: none;
+}
+
+.ebene .bezeichnung.parentOfFilter {
+    padding: 0;
+    height: 14px;
+    background: #fff !important;
+    border: none;
+}
+
+.ebene .bezeichnung.parentOfFilter .bez {
+    font-size: 8px;
+    top: 0px;
+}
+
+.ebene .bezeichnung.parentOfFilter .bez b {
+    font-size: 10px;
+}
+
+.ebene .bezeichnung .bez, .ebene .bezeichnung .info {
+    top: 7px;
+    position: absolute;
+    margin-left: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    white-space: nowrap;
+    background: hsla(0, 0%, 100%, 1);
+}
+
+.ebene.ebeneBG .bezeichnung .bez, .ebene.ebeneBG .bezeichnung .info {
+    position: relative;
+}
+
+.ebene .bezeichnung .bez b {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: .1em;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*background: hsla(0, 0%, 100%, 1);*/
+}
+
+.ebene .bezeichnung.moveThis {
+    border: 2px solid var(--rot);
+}
+
+.ebene .bezeichnung .bild {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Move */
+
+.btnMove {
+    position: absolute;
+    display: block;
+    right: 5px;
+    top: 5px;
+}
+
+/* Opener */
+
+.opener {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background-image: url(bilder/dreieck.png);
+    background-size: cover;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ebene.closed .opener {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ebene.closed .ebene {
+    height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+/* AGES */
+
+.age {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.ageKarbon {
+    background-color: rgb(192, 160, 192);
+}
+
+.agePerm {
+    background-color: rgb(160, 212, 212);
+}
+
+.ageKreide {
+    background-color: rgb(221, 183, 183);
+}
+
+.ageJura {
+    background-color: rgb(174, 209, 174);
+}
+
+.ageTrias {
+    background-color: rgb(179, 179, 209);
+}
+
+.ageEo {
+    background-color: rgb(207, 207, 193);
+}
+
+.age .beschriftung {
+    position: absolute;
+    right: 0px;
+    top: 51px;
+    text-align: left;
+    font-size: 40px;
+    transform: rotate(90deg);
+    color: hsla(0, 0%, 0%, .5);
+}
+
+/* Details */
+
+#details {
+    position: fixed;
+    width: 290px;
+    right: 0;
+    top: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: var(--grauHell);
+    border: var(--grau) solid 2px;
+}
+
+#details .klartext {
+    /*color: #555;*/
+    font-size: 14px;
+}
+
+#details input[type="text"] {
+    width: auto;
+    margin-left: 70px;
+    width: 210px;
+}
+
+#details input[type="color"] {
+    margin-left: 70px;
+}
+
+#details .bilder {
+    position: relative;
+    margin-top: 10px;
+}
+
+#details .bilder img {
+    max-height: 100px;
+    max-width: 290px;
+}
+
+#details label {
+    font-size: .6em;
+}
+
+#details .cblebensraum, #details .cbnahrung {
+    border-bottom: 1px solid #888;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+#details h4 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.inputEltern {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.btnEmpty {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    padding-top: 0px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid var(--grau);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.btnEmpty:hover {
+    background-color: var(--gelb);
+}
+
+span.legende {
+    position: absolute;
+    /* display: block; */
+    color: var(--grauDunkel);
+    font-size: 14px;
+}
+
+span.output.legende {
+    position: relative;
+}
+
+span.output.legende::after {
+    content: ': ';
+}
+
+span.output.laenge::after {
+    content: ' m';
+}
+
+span.output.gewicht::after {
+    content: ' kg';
+}
+
+span.output.mioJhrVon::after, span.output.mioJhrBis::after {
+    content: ' Mio Jahre';
+}
+
+.map {
+    border-bottom: 1px solid #888;
+    padding-bottom: 10px;
+}
+
+#details .map h4 {
+    margin-bottom: 10px;
+}
+
+.map a {
+    position: relative;
+    padding: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #888;
+}
+
+.map a:hover {
+    background-color: #888;
+    color: #fff;
+    border: 1px solid #888;
+}
+
+#details .icon {
+    position: relative;
+    width: 32px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* LINKS */
+
+.linkWiki {
+    position: relative;
+    padding: 5px;
+    background: var(--nurEinBisschenDunkler);
+    border: var(--borderGrau);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    margin-right: 5px;
+    width: 44%;
+}
+
+.linkWiki a {
+    text-decoration: none;
+    color: var(--headerRot);
+    font-weight: bold;
+}
+
+#neuerKnoten, #neuesAttribut {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--grau);
+}
+
+#neuerKnoten input[type="text"] {
+    margin-left: 0;
+    width: 280px;
+    overflow: hidden;
+}
+
+/* SUCHE */
+
+#scrollTo, #suche {
+    position: fixed;
+    width: 290px;
+    height: 35px;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background: var(--grauHell);
+    border: var(--grau) solid 2px;
+}
+
+#suche {
+    height: 35px;
+}
+
+#scrollTo {
+    top: 50px;
+}
+
+#inputScrollTo, #inputSuche, #inputSuche2 {
+    position: relative;
+    display: block;
+    width: 280px;
+    background-color: #fff;
+    border: 1px solid var(--grau);
+    padding: 1px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#inputScrollTo {
+    width: 200px;
+}
+
+#scrollTo .info {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+}
+
+/* Scroll To */
+
+/* Get Up */
+
+#getUp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #fff;
+    border: var(--borderGrau);
+    padding: 10px;
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#getUp:hover {
+    background: var(--gelb);
+}
+
+.alleEltern {
+    border: 1px solid #888;
+    padding-left: 10px;
+    color: #888;
+    font-size: 12px;
+}
+
+.vorfahr {
+    margin-left: 5px;
+}
+
+_.vorfahr:not(:last-child)::after {
+    content: '->'
+}
+
+.vorfahr:hover {
+    background-color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+}

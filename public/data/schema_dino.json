@@ -1,0 +1,70 @@
+[
+    {
+        "url": "ankylosaurus.png",
+        "name": "ankylosaurus"
+    },
+    {
+        "url": "ceratops.png",
+        "name": "ceratops"
+    },
+    {
+        "url": "elasmosaur.png",
+        "name": "elasmosaur"
+    },
+    {
+        "url": "hadrosaurus.png",
+        "name": "hadrosaurus"
+    },
+    {
+        "url": "herrerasaurus.png",
+        "name": "herrerasaurus"
+    },
+    {
+        "url": "ichthyosaurus.png",
+        "name": "ichthyosaurus"
+    },
+    {
+        "url": "mosasaurus.png",
+        "name": "mosasaurus"
+    },
+    {
+        "url": "pterosaur_ks.png",
+        "name": "pterosaur_ks"
+    },
+    {
+        "url": "pterosaur_ls.png",
+        "name": "pterosaur_ls"
+    },
+    {
+        "url": "sauropod.png",
+        "name": "sauropod"
+    },
+    {
+        "url": "stegosaur.png",
+        "name": "stegosaur"
+    },
+    {
+        "url": "suchus.png",
+        "name": "suchus"
+    },
+    {
+        "url": "theropod.png",
+        "name": "theropod"
+    },
+    {
+        "url": "voegel.png",
+        "name": "voegel"
+    },
+    {
+        "url": "vogelraptor.png",
+        "name": "vogelraptor"
+    },
+    {
+        "url": "dimetrodon.png",
+        "name": "dimetrodon"
+    },
+    {
+        "url": "kannemeyer.png",
+        "name": "kannemeyer"
+    }
+]

@@ -1,0 +1,108 @@
+[{
+        "bez": "de",
+        "text": "Deutsch",
+        "type": "string"
+    },
+    {
+        "bez": "en",
+        "text": "Englisch",
+        "type": "string"
+    },
+    {
+        "bez": "entdeckt",
+        "text": "Jahr der Entdeckung",
+        "type": "number"
+    },
+    {
+        "bez": "gewicht",
+        "text": "Gewicht in kg",
+        "type": "number"
+    },
+    {
+        "bez": "laenge",
+        "text": "Länge in Meter",
+        "type": "number"
+    },
+    {
+        "bez": "spannweite",
+        "text": "Spannweite in Meter",
+        "type": "number"
+    },
+    {
+        "bez": "mioJhrVonBis",
+        "text": "String zum Parsen der Wiki-Angaben",
+        "type": "string"
+    },
+    {
+        "bez": "mioJhrVon",
+        "text": "String zum Parsen der Wiki-Angaben",
+        "type": "string"
+    },
+    {
+        "bez": "mioJhrBis",
+        "text": "String zum Parsen der Wiki-Angaben",
+        "type": "string"
+    },
+    {
+        "bez": "fundort",
+        "text": "Wo wurden die Fossilien gefunden",
+        "type": "string"
+    },
+    {
+        "bez": "lebensraum",
+        "text": "Land, Wasser, Luft, Höhlen",
+        "type": "object",
+        "default": {
+            "land": false,
+            "wasser": false,
+            "luft": false,
+            "hoehlen": false,
+            "baeume": false
+        }
+    },
+    {
+        "bez": "nahrung",
+        "text": "Pflanzen, Fleisch, Fisch",
+        "type": "object",
+        "default": {
+            "pflanzen": false,
+            "fleisch": false,
+            "fisch": false,
+            "insekten": false,
+            "marineinvertibres": false,
+            "muscheln":false
+        }
+    },
+    {
+        "bez": "kleid",
+        "text": "Haar, Daunen, ",
+        "type": "object",
+        "default": {
+            "haare": false,
+            "daunen": false,
+            "federn": false,
+            "protofedern": false,
+            "schmuckfedern": false
+        }
+    },
+    {
+        "bez": "schmuck",
+        "text": "Höcker, Segel, etc.",
+        "type": "object",
+        "default": {
+            "segel": false,
+            "stacheln": false,
+            "platten": false,
+            "hoerner": false,
+            "kamm": false,
+            "hahnenkamm": false,
+            "kopfverlängerung": false,
+            "nackenschild": false
+        }
+    },
+    {
+        "bez": "color",
+        "text": "Farbe",
+        "type": "string"
+    }
+]
